@@ -1,18 +1,45 @@
-import './globals.css'
+import Link from 'next/link';
 
-export default function RootLayout({
-  children,
-}: {
+const Route = [{
+  label: 'Home',
+  route:'/'
+},{
+  label:'Landing',
+  route:'/landing'
+},{
+  label:'Payment',
+  route:'/payment'
+},{
+  label:'Profile',
+  route:'/profile'
+},{
+  label:'Create-Profile',
+  route:'/create-profile'
+}]
+
+export default function RootLayout({children,}: {
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
+    <html>
       <head />
-      <body>{children}</body>
+      <title>Hola Mundo</title>
+      <body>
+<header>
+<nav>
+<ul>
+  {Route.map(({label, route}) => (
+    <li key ={route}>
+      <Link href={route}>
+        {label}
+      </Link>
+    </li>
+  ))}
+</ul>
+</nav>
+</header>
+        {children}
+      </body>
     </html>
   )
 }
