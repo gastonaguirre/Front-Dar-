@@ -7,14 +7,14 @@ const Route = [{
   label:'Landing',
   route:'/landing'
 },{
-  label:'Payment',
-  route:'/payment'
+  label:'Pagos',
+  route:'/components/pagos'
 },{
-  label:'Profile',
-  route:'/profile'
+  label:'Profesional',
+  route:'/components/profesional'
 },{
-  label:'Create-Profile',
-  route:'/create-profile'
+  label:'Crear Perfil',
+  route:'/components/crearPerfil'
 }]
 
 export default function RootLayout({children,}: {
