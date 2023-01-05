@@ -7,8 +7,8 @@ const Route = [{
   label:'Landing',
   route:'/landing'
 },{
-  label:'Pagos',
-  route:'/components/pagos'
+  label:'Citas',
+  route:'/components/citas'
 },{
   label:'Profesional',
   route:'/components/profesional'

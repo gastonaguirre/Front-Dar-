@@ -14,6 +14,7 @@ specifiers:
   react: 18.2.0
   react-dom: 18.2.0
   typescript: 4.9.4
+  typescript-json: ^3.4.18
 
 dependencies:
   '@emotion/react': 11.10.5_kzbn2opkn2327fwg5yzwzya5o4
@@ -29,6 +30,7 @@ dependencies:
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   typescript: 4.9.4
+  typescript-json: 3.4.18_typescript@4.9.4
 
 packages:
 
@@ -2470,10 +2472,31 @@ packages:
     engines: {node: '>=10'}
     dev: false
 
+  /typescript-json/3.4.18_typescript@4.9.4:
+    resolution: {integrity: sha512-12hmsev6dNz0+7BZX1peHMmlOM9R/Cv+SoCeKSYJV0esqRAqbAeA44wrQrWY275IPEMfHbJDkxDdchTTaQxGcw==}
+    deprecated: Renamed to typia
+    peerDependencies:
+      ttypescript: '>= 1.5.15'
+      typescript: '>= 4.5.2'
+    dependencies:
+      typescript: 4.9.4
+      typia: 3.4.18_typescript@4.9.4
+    dev: false
+
   /typescript/4.9.4:
     resolution: {integrity: sha512-Uz+dTXYzxXXbsFpM86Wh3dKCxrQqUcVMxwU54orwlJjOpO3ao8L7j5lH+dWfTwgCwIuM9GQ2kvVotzYJMXTBZg==}
     engines: {node: '>=4.2.0'}
     hasBin: true
+    dev: false
+
+  /typia/3.4.18_typescript@4.9.4:
+    resolution: {integrity: sha512-eJHu/cQN3PTFQkKkpMU5i4LosFA/PPxXBXaaCVZKO3i3hG6iC6l2Hq4ySHK56DsACqjNAFdg+AdwkWsc9CqXFg==}
+    hasBin: true
+    peerDependencies:
+      ttypescript: '>= 1.5.15'
+      typescript: '>= 4.5.2'
+    dependencies:
+      typescript: 4.9.4
     dev: false
 
   /unbox-primitive/1.0.2:
