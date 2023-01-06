@@ -1,8 +1,9 @@
+import SearchAppBar from "../components/NavBar/page";
 
 
 export default function Landing() {
   return (
-    <div>Landing Page</div>
+    <p>Home</p>
   )
 }
 

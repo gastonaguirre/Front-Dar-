@@ -19,7 +19,7 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
     backgroundColor: "#001960",
     color: "white",
     fontSize: 16,
-  
+
   },
   [`&.${tableCellClasses.body}`]: {
     fontSize: 16,
@@ -46,7 +46,7 @@ export default function Citas({ citas }: Props) {
   citas = jsonData;
   console.log(citas)
   return (
-     <TableContainer component={Paper}>
+    <TableContainer component={Paper}>
       <Table sx={{ minWidth: 700 }} aria-label="customized table">
         <TableHead>
           <TableRow>
@@ -55,47 +55,31 @@ export default function Citas({ citas }: Props) {
             <StyledTableCell align="right">Doctor&nbsp;</StyledTableCell>
             <StyledTableCell align="right">Estado de la cita&nbsp;</StyledTableCell>
             <StyledTableCell align="right">Situación&nbsp;</StyledTableCell>
-            
+
           </TableRow>
         </TableHead>
         <TableBody>
-    {citas.map((c) => (
-         <StyledTableRow key={c.id_paciente}>
-          
+          {citas.map((c) => (
+            <StyledTableRow key={c.id_paciente}>
+
               <StyledTableCell align="right"  >{c.hora_inicio} a {c.hora_fin}</StyledTableCell>
               <StyledTableCell align="right">{c.nombre_paciente}</StyledTableCell>
               <StyledTableCell align="right">{c.nombre_dentista}</StyledTableCell>
               <StyledTableCell align="right">{c.nombre_estado}</StyledTableCell>
-              <StyledTableCell >   {c.id_situacion=== 1 ? <Alert  severity="error">{c.descripcion_situacion}</Alert>
-              : c.id_situacion===2 ? <Alert severity="warning">{c.descripcion_situacion}</Alert> :
-              c.id_situacion===3 ?<Alert severity="info">{c.descripcion_situacion}</Alert> :
-               <Alert severity="success">{c.descripcion_situacion}</Alert>}</StyledTableCell>
-           
-              
-             
-              
-              
-            
-             
+              <StyledTableCell >   {c.id_situacion === 1 ? <Alert severity="error">{c.descripcion_situacion}</Alert>
+                : c.id_situacion === 2 ? <Alert severity="warning">{c.descripcion_situacion}</Alert> :
+                  c.id_situacion === 3 ? <Alert severity="info">{c.descripcion_situacion}</Alert> :
+                    <Alert severity="success">{c.descripcion_situacion}</Alert>}</StyledTableCell>
 
-
-
-          </StyledTableRow>
-    ))}
+            </StyledTableRow>
+          ))}
         </TableBody>
       </Table>
     </TableContainer>
-    
+
   );
 
-function SimpleAlerts() {
-  const classes = useStyles();
 
-  return (
-    <div className={classes.root}>
-     
-    </div>
-  );
 }
 
 
@@ -116,8 +100,6 @@ function SimpleAlerts() {
 
 
     
-  
-  
-}
+
 
 
