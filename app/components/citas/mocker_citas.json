@@ -11,7 +11,7 @@
             "fecha": "08/01/2022",
             "id_estado": 1,
             "nombre_estado": "Atendido" ,
-            "id_situacion":1,
+            "id_situacion":2,
             "descripcion_situacion":"Hay Saldo"
         },
         {
@@ -25,7 +25,7 @@
             "fecha": "08/01/2022",
             "id_estado":2 ,
             "nombre_estado": "Notificado via Email" ,
-            "id_situacion":1,
+            "id_situacion":3,
             "descripcion_situacion":"Diagnostico"
         },
         {
@@ -53,12 +53,12 @@
             "fecha": "08/01/2022",
             "id_estado": 1,
             "nombre_estado": "Atendido" ,
-            "id_situacion":1,
+            "id_situacion":2,
             "descripcion_situacion":"Hay Saldo"
         },
         {
             "id_paciente": 15,
-            "nombre_paciente": "",
+            "nombre_paciente": "Nicolas Winsinki",
             "hora_inicio": "10:15",
             "hora_fin": "10:30",
             "duracion": 15,
@@ -67,7 +67,7 @@
             "fecha": "08/01/2022",
             "id_estado": 4,
             "nombre_estado": "Confirmado por whatsapp",
-            "id_situacion":1,
+            "id_situacion":2,
             "descripcion_situacion":"Hay Saldo"
         },
         {
@@ -79,9 +79,9 @@
             "id_dentista": 626,
             "nombre_dentista": "Pedro Gonzalez",
             "fecha": "08/01/2022",
-            "id_estado": 1,
+            "id_estado": 4,
             "nombre_estado": "Confirmado por whatsapp",
-            "id_situacion":1,
+            "id_situacion":4,
             "descripcion_situacion":"No hay Deuda"
         },
         {
@@ -94,7 +94,7 @@
             "nombre_dentista": "Pedro Gonzalez",
             "fecha": "08/01/2022",
             "nombre_estado": "Confirmado por whatsapp",
-            "id_situacion":1,
+            "id_situacion":4,
             "descripcion_situacion":"No hay Deuda"
         },
         {
@@ -107,7 +107,7 @@
             "nombre_dentista": "Pedro Gonzalez",
             "fecha": "08/01/2022",
             "nombre_estado": "Confirmado por whatsapp",
-            "id_situacion":1,
+            "id_situacion":2,
             "descripcion_situacion":"Hay Saldo"
         },
         {
@@ -120,7 +120,7 @@
             "nombre_dentista": "Pedro Gonzalez",
             "fecha": "08/01/2022",
             "nombre_estado": "Confirmado por whatsapp",
-            "id_situacion":1,
+            "id_situacion":2,
             "descripcion_situacion":"Hay Saldo"
         },
         {
@@ -133,7 +133,7 @@
             "nombre_dentista": "Pedro Gonzalez",
             "fecha": "08/01/2022",
             "nombre_estado": "Confirmado por whatsapp",
-            "id_situacion":1,
+            "id_situacion":2,
             "descripcion_situacion":"Hay Saldo"
         }
     ]

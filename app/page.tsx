@@ -1,6 +1,9 @@
-
-export default function Home () {
+'use client'
+import React from 'react'
+import SearchAppBar from './components/NavBar/page'
+export default function Home() {
   return (
-    <div>Hola Mundo asdasda s</div>
+    <SearchAppBar/>    
   )
 }
+
